@@ -69,4 +69,4 @@ function game(){
         console.log(`Draw! Score: ${playerScore}-${computerScore}`);
 }
 
-game();
+//game();

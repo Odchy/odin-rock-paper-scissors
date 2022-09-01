@@ -1,0 +1,34 @@
+body {
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #364552;
+}
+
+header {
+    background-color: #1F2937;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    color: #F9FAF8;
+    font-size: 30px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
