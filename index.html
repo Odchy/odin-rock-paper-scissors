@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <title>Rock Paper Scissors!</title>
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 </head>
-<script src="external.js"></script>
+<script src="external.js" async></script>
 <body>
     <header>
         <h1>ROCK PAPER SCISSORS</h1>
     </header>
     <div class="main">
-        <h2>First to 5 Wins!</h2>
-        <div class="buttons">
-            <button>Rock</button>
-            <button>Paper</button>
-            <button>Scissors</button>
+        <div class="info">
+            <div class="infoHeader">First to 5 Wins!</div>
+            <div class="choices">
+                <div class="choice" data-key="rock">
+                    <div class="emoji">✊</div>
+                  </div>
+                  <div class="choice" data-key="paper">
+                    <div class="emoji">🖐</div>
+                  </div>
+                  <div class="choice" data-key="scissors">
+                    <div class="emoji">✌️</div>
+                  </div>
+            </div>
         </div>
         <div class="scoreBoard">
-            Player Score: 0
-            Computer Score: 0
+            <div id="playerScore"></div>
+            <div id="computerScore"></div>
         </div>
-        <div class="roundResult">You lose! Scissors beats Rock</div>
+        <div class="roundResult"></div>
     </div>
     <div class="footer">
         <p>
-            Made by: Me
+            Thanks to: <a href="https://www.theodinproject.com/">The Odin Project</a>
         </p>
     </div>
 </body>

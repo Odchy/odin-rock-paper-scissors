@@ -1,19 +1,19 @@
 body {
-    font-family: 'Roboto';
+    font-family: 'Quicksand', Arial;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-color: #364552;
+    background-color: #51A3A3;
 }
 
 header {
-    background-color: #1F2937;
-    padding: 10px 0;
+    background-color: #51A3A3;
     display: flex;
     justify-content: center;
     color: #F9FAF8;
     font-size: 30px;
+    border-bottom: 5px solid #DD7373;
 }
 
 .main {
@@ -22,13 +22,73 @@ header {
     align-items: center;
 }
 
+.scoreBoard {
+    display: flex;
+    gap: 50px;
+    font-size: 40px;
+    color: #F9FAF8;
+}
+
 
 .footer {
-    background-color: #1F2937;
+    background-color: #51A3A3;
     color: #E5E7EB;
     position: fixed;
     bottom: 0;
     height: 50px;
     width: 100%;
     text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 100px 0;
+}
+
+.infoHeader {
+    font-size: 50px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+.choices {
+    margin-top: 32px;
+    display: flex;
+    gap: 52px;
+    justify-content: center;
+}
+ 
+.choice {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    color: #F9FAF8;
+    height: 200px;
+    border: 2px solid #F9FAF8;
+    font-size: 120px;
+    transition: 0.3s;
+}
+
+.choice:hover{
+    color: #DD7373;
+    cursor: pointer;
+    border: 2px solid #DD7373;
+    font-size: 150px;
+}
+
+.rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+.roundResult {
+    font-size: 40px;
+    color: #F9FAF8;
+    margin-top: 30px;
 }
